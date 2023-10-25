@@ -13,11 +13,10 @@ const multiply = (a, b) =>{
 const divide = (a, b)=>{
     return a / b;
 }
+const modulo = (a, b) => {
+ return a % b;
+}
 
-
-let firstNumber;
-let  operator;
-let  secondNumber;
 
 const operate = (a, b, op) => {
    switch(op){
@@ -32,9 +31,9 @@ const operate = (a, b, op) => {
         
     case '/':
         return divide(a,b);
-        
-    default:
-        "Unsupported Operation"
+    case '%':
+        return modulo(a, b)
    }
 }
-console.log(operate(2, 5, '*'))
+
+let fistNumber, operator, secondNumber;
