@@ -37,3 +37,14 @@ const operate = (a, b, op) => {
 }
 
 let fistNumber, operator, secondNumber;
+
+const numberButton = document.querySelectorAll('#numberButton');
+const input = document.querySelector('.input');
+const equal = document.querySelector('#equal');
+
+numberButton.forEach(button => {
+    button.addEventListener("click", function(){
+        input.value += button.textContent;
+    })
+})
+
